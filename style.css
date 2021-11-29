@@ -1,0 +1,411 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth; 
+ 
+}
+
+
+section {
+  height: 100vh;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;  
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  scroll-snap-align: start;
+}
+
+
+.contenedor{
+  scroll-snap-type:x mandatory;
+  height: 100vh;
+
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  height: 30vw;
+  min-height: 450px;
+  width: 30vw;
+  min-width: 450px;
+  padding: 50px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*------------NAVBAR--------------*/
+
+.navbar{
+   font-family: 'Open Sans', sans-serif;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+
+#logo{
+font-size: 45px;
+margin-left: -168px;
+text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+
+}
+
+
+#navbarNav{
+  font-size: 22px;
+  margin-right: -135px;
+}
+
+#navbarNav li{
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+#navbarNav li:hover{
+ box-shadow: 0 0 40px 40px darkblue inset;
+    color: black !important;
+}
+
+.navshift{
+  background-color: #7CB7EE;
+}
+/*--------------------------*/
+
+
+iframe {
+    border: 0;
+    margin-bottom: 300px;
+}
+
+
+/*------------Hero
+--------------*/
+
+
+
+#inicio{
+  width: 100%;
+  margin-top: 0px;
+}
+
+#Hero{
+  width: 100%;
+  height: 100vh;
+  background-image: url(assets/Sonrisa3.jpg);
+  background-size: cover;
+
+
+}
+
+
+
+
+#Hero h2 {
+  color: white;
+  font-size: 24px;
+  padding-top: 15px;
+  padding-left: 841px;
+  text-align: center;
+   font-family: 'Open Sans', sans-serif;
+   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+#Hero h1 {
+  color: white;
+  font-size: 40px;
+  padding-top: 380px;
+  padding-left: 800px;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  text-align: center;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+#Hero a {
+  position: relative;
+  float: right;
+  margin-top: 40px;
+  margin-right: 460px;
+  box-sizing: border-box;
+  appearance: none;
+  background-color:#5BABEC;
+  border: 1px solid white;
+  border-radius: 0.6em;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+#Hero a:hover{
+  
+    box-shadow: 0 0 40px 40px white inset;
+    color: black;
+}
+/*---------------------------*/
+#cepillado{
+ background-image: url(assets/wave.svg);
+ aspect-ratio: 960/540;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+
+#brush{
+  margin-bottom: 280px;
+}
+
+
+
+
+
+#fluor{
+   background-image: url(assets/wave.svg);
+ aspect-ratio: 960/540;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#seda-dental{
+background-image: url(assets/blob.svg);
+ aspect-ratio: 960/540;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#fluor img{
+  margin-bottom: 200px;
+}
+
+
+
+/*----------------------------------------------*/
+
+
+
+
+
+#juega {
+  flex-direction: column;
+  justify-content: center;
+  gap: 75px;
+  background-image: url(assets/circles.svg);
+  aspect-ratio: 960/540;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+#juega a{
+  position: relative;
+  float: right;
+  margin-top: 40px;
+  margin-right: 460px;
+  box-sizing: border-box;
+  appearance: none;
+  background-color:#5BABEC;
+  border: 1px solid white;
+  border-radius: 0.6em;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+
+}
+
+footer {
+  display: flex !important;
+  justify-content: space-around;
+  background-color: #5BABEC;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+footer h3{
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Zen Maru Gothic', sans-serif;
+
+  color: white;
+}
+
+footer h5{
+  font-size: 15px;
+ font-family: 'Open Sans', sans-serif;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  color: white;
+}
+
+
+/*-----Media Queries------------*/
+@media screen and (min-width:1300px) and (max-width:1390px ){
+#Hero h1{
+font-size: 36px ;
+    padding-top: 279px ;
+    padding-left: 617px ;
+  }
+
+
+  #Hero h2{
+    font-size: 22px;
+    padding-top: 15px;
+    padding-left: 618px
+  }
+
+  #logo{
+        font-size: 40px !important;
+    margin-left: -90px !important;
+  }
+
+  #navbarNav {
+    font-size: 20px !important;
+    margin-right: -125px !important;
+  }
+
+  #Hero a{
+        margin-top: 35px;
+    margin-right: 313px;
+    font-size: 12px;
+  }
+#brush{
+  padding: 0;
+  margin-top: 65px;
+}
+
+#brush img{
+  width: 300px;
+}
+
+iframe{
+  width: 500px;
+  height: 300px;
+}
+
+#cepillado{
+ padding-top: 90px;
+}
+
+#juega{
+  padding-top: 110px;
+}
+#juega img{
+  width: 400px;
+  height: 300px;
+}
+#juega a{
+  padding: 0px;
+  margin: 0px;
+  font-size: 23px;
+  line-height: 0;
+  padding: 1.2em 2.8em;
+}
+
+
+
+
+}
+@media screen and (min-width: 1400px) and (max-width: 1450px){
+
+  #logo {
+    font-size: 35px !important;
+    margin-left: -25px !important;
+}
+
+#navbarNav {
+    font-size: 20px !important;
+    margin-right: -65px !important;
+}
+
+
+#Hero h1 {
+    font-size: 30px;
+    padding-top: 350px;
+    padding-left: 750px;
+}
+
+ #Hero h2{
+    font-size: 22px;
+    padding-top: 15px;
+    padding-left: 750px;
+  }
+
+  #Hero a{
+        margin-top: 35px;
+    margin-right: 313px;
+    font-size: 12px;
+  }
+#brush{
+  padding: 0;
+  margin-top: 65px;
+}
+
+#brush img{
+  width: 300px;
+}
+
+iframe{
+  width: 500px;
+  height: 300px;
+}
+
+#cepillado{
+ padding-top: 90px;
+}
+
+#juega{
+  padding-top: 110px;
+}
+#juega img{
+  width: 400px;
+  height: 300px;
+}
+#juega a{
+  padding: 0px;
+  margin: 0px;
+  font-size: 23px;
+  line-height: 0;
+  padding: 1.2em 2.8em;
+}
+
+}
